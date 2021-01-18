@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow: area_privada.php
+Disallow: /assets/ 
+

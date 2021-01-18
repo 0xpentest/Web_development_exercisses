@@ -1,0 +1,301 @@
+
+/* Estilos para el diseño Mobile First */
+
+/* Tipografía de fuentes a utilizar */
+@font-face {
+	font-family: tipo_1;
+	src: url(../fonts/Goldman/Goldman-Bold.ttf);
+}
+
+@font-face {
+	font-family: tipo_2;
+	src: url(../fonts/Lobster/Lobster-Regular.ttf);
+}
+
+
+/*Estilos generales para aplicar a los dispositivos móviles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+html {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+*/
+
+body {
+	 background-color: #fbdb65;
+}
+
+.tipo {
+	font-family: tipo_2;
+}
+
+
+p {
+	padding: 1em 1em .2em 1em;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+/*el h1 cabecera del párrafo*/
+.t1 {
+	text-align: center;
+	font-family: tipo_2; 
+}
+
+h5 {
+	font-style: bold;
+	color: black;
+	font-family: tipo_1;
+}
+
+/*contenedor que contiene los párrafos*/
+.three-columns {
+	margin: 1em;
+	/*background-color: #fbdb65;*/
+}
+
+/*para los párrafos*/
+.centrar {
+	text-align: center;
+	font-style: bold;
+	color: black;
+	font-family: tipo_1;
+}
+
+.centrar-footer {
+	margin: 1em;
+	text-align: center;
+	/*background-color: #fbdb65;*/
+}
+
+#enlace-footer {
+	color: black;
+	font-style: bold;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 0px;
+  margin-left: 1em;
+  margin-right: 1em;
+  /*background-color: #fbdb65;*/
+}
+
+.column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding-right: .2em;
+    padding-left: .2em;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+h3 {
+	text-align: center;
+	font-family: tipo_1;
+	font-style: bold;
+	text-shadow: 1px 2px #999;
+}
+
+
+.row .column a img {
+	border-radius: 25px;
+	border: 2px solid black;
+}
+
+#caja-servicios {
+	/*background-color: #B8EFF4 !important; */
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 2em;
+	width: 94%;
+	border-radius: 25px;
+	border: 2px solid black;
+}
+
+#caja-trabajos {
+	/*background-color: #B8F4CD;*/
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 2em;
+	width: 94%;
+	border-radius: 25px;
+	border: 2px solid black;
+}
+
+#caja-localizacion {
+	/*background-color: #B8F4CD;*/
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 2em;
+	width: 94%;
+	border-radius: 25px;
+	/*border: 2px solid black;*/
+}
+
+#caja-contacto {
+	/*background-color: #B8F4CD; */
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 2em;
+	width: 94%;
+	border-radius: 25px;
+	/*border: 2px solid black; */
+}
+
+#caja-privada {
+	/*background-color: #B8F4CD; */
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 2em;
+	width: 94%;
+	border-radius: 25px;
+	/*border: 2px solid black;*/
+}
+
+
+.centrar-flecha {
+	width: 100%;
+	text-align: center;
+}
+
+.caja-mapa {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+.caja-mapa iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	border-radius: 25px;
+}
+
+address {
+	text-align: center;
+	font-family: tipo_1;
+}
+
+
+
+#servicios, #trabajos, #localizacion, #contacto, #privada, #registro {
+	text-align: center;
+	font-family: tipo_1;
+}
+
+.encabezado_area {
+	text-align: center;
+	font-family: tipo_1;
+} 
+
+#cookies {
+	color: white;
+}
+
+.bgcolor {
+	background-color: #fbdb65;
+	color: black;
+	font-style: bold;
+}
+
+/*VENTANA MODAL*/
+.ventana-modal {
+	background-color: #fbdb65;
+}
+
+.cabecera-modal {
+	background-color: black;
+	color: white;
+}
+
+.pie-modal {
+	background-color: black;
+}
+
+.pie-modal button {
+	background-color: #fbdb65;
+}
+
+/*
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: red;
+	color: white;
+	text-align: center;
+}*/
+
+
+/* text-shadow: 1px 2px #999; 
+
+http://www.spanish-translator-services.com/espanol/t/007/text-shadow.html
+
+
+*/
+/* Tables */
+
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+    
+    .column {
+    	-ms-flex: 50%;
+    	flex: 50%;
+    	max-width: 50%;
+    	
+    }
+
+}
+
+/* pantallas de escritorio */
+@media (min-width: 769px) and (max-width: 992px) {
+
+    /* Create four equal columns that sits next to each other */
+    /*Pantallas grandes*/
+    .column {
+    	-ms-flex: 25%; /* IE10 */
+    	flex: 25%;
+    	max-width: 25%;
+    	padding: 0 4px;
+    	
+    }  
+}
+
+/* pantallas de escritorio grandes o tv */
+@media (min-width: 993px) {
+	
+    /*Pantallas grandes*/
+    .column {
+    	-ms-flex: 25%; /* IE10 */
+    	flex: 25%;
+    	max-width: 25%;
+    	padding: 0 4px;
+    	
+    }
+	
+}

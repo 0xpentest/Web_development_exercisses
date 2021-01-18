@@ -1,0 +1,57 @@
+/* estilos para la versión imprimible */
+
+@media print {
+
+	@page {
+		margin: 2cm; /* 2cm porque estamos imprimiento */
+	}
+
+	body {
+		margin: 0;
+		color: #000;
+		background-color: #fff;
+		float: none;
+	}
+
+	/* si no queremos imprimir la caja nav */
+	nav {
+		display:none;
+	}
+
+    /* si no queremos imprimir el carrousel */
+	.bd-example {
+		display: none;
+	}
+
+	div p {
+		font-size: 1.5em;
+		line-height: .3em;
+	}
+
+	.row .column {
+		margin: 2em;
+	}
+
+
+	@media print and (orientation: portrait) {  /* vertical */
+
+	}
+
+	@media print and (orientation: landscape) {  /* horizontal */
+
+	}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
